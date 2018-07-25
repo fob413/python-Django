@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7 ]> <html class="ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+
+<head>
+
+<!-- Basic Page Needs
+================================================== -->
+<title>Worksfair - Log in / Register</title>
+<meta charset="utf-8">
+<meta name="description" content="Sign in or Register on worksfair" />
+<meta name="keywords" content="businesses, startup, sign-in page, Sign-up page, registeration page, authentication, business directory, free business website, growing businesses live here, video background, worksfair, responsive, bootstrap" />
+<meta name="developer" content="Ideosynergy">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- FAV AND TOUCH ICONS
+==================================================   -->
+{% load static %}
+<link href="{% static 'worksfair/images/favicon/favicon.png' %}" rel="shortcut icon">
+<link href="{% static 'worksfair/images/favicon/apple-touch-icon-57-precomposed.png' %}" rel="apple-touch-icon">
+<link href="{% static 'worksfair/images/favicon/apple-touch-icon-72-precomposed.png' %}" rel="apple-touch-icon">
+<link href="{% static 'worksfair/images/favicon/apple-touch-icon-144-precomposed.png' %}" rel="apple-touch-icon">
+<link rel="icon" type="image/png" href="{% static 'worksfair/images/favicon/favicon.png' %}">
+
+<!-- CSS
+================================================== -->
+<link rel="stylesheet" href="{% static 'worksfair/css/style.css' %}">
+<link rel="stylesheet" href="{% static 'worksfair/css/colors/main.css' %}" id="colors">
+<link rel="stylesheet", href="{% static 'worksfair/css/extras.css' %}" >
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- Header Container
+    ================================================== -->
+    <header id="header-container">
+
+      <!-- Header -->
+      <div id="header">
+        <div class="container">
+          
+          <!-- Left Side Content -->
+          <div class="left-side">
+            
+            <!-- Logo -->
+            <div id="logo">
+              <a href="{% url 'index' %}"><img src="{% static 'worksfair/images/logo.png' %}" alt="Worksfair"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <p class="notfound"><span class="oops">Oops!</span> <br> We can't seem to find the page<br>you're looking for</p>
+
+    <!-- Footer
+    ================================================== -->
+    <div id="footer">
+      <!-- Main -->
+      <div class="container">
+        <!-- Copyright -->
+        <div class="row">
+          <div class="col-md-12">
+            <div class="copyrights">© 2018 Worksfair. All Rights Reserved.</div>
+          </div>
+        </div>
+    
+      </div>
+    
+    </div>
+  </div>
+</body>
